@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajender Reddy Annam - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        #branding {
+            float: left;
+        }
+        #branding h1 {
+            margin: 0;
+        }
+        #branding .highlight {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav li {
+            display: inline;
+            padding: 0 20px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        .section {
+            padding: 50px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #35424a;
+        }
+        #home {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        #home h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        #home p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: #e8491d;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #35424a;
+        }
+        #about {
+            background: #f4f4f4;
+        }
+        #about .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #personal-image {
+            flex: 1;
+            text-align: center;
+        }
+        #personal-image img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        .intro-text {
+            flex: 1;
+            padding: 0 20px;
+        }
+        #experience {
+            background: #ffffff;
+        }
+        .experience-header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .project {
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        #education {
+            background: #f4f4f4;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        #skills {
+            background: #ffffff;
+        }
+        .skills {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills li {
+            background: #e8491d;
+            color: #ffffff;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .skills li i {
+            margin-right: 10px;
+        }
+        #contact {
+            background: #f4f4f4;
+        }
+        .contact-details {
+            text-align: center;
+        }
+        .contact-details a {
+            color: #e8491d;
+            text-decoration: none;
+        }
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .icon {
+            margin-right: 10px;
+            color: #e8491d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Rajender</span> Reddy Annam</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Hello!!! Welcome to my Portfolio</h1>
+            <p>Explore my profile for more info</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title"><i class="icon fas fa-user"></i>About Me</h2>
+            <div class="content-wrapper">
+                <div id="personal-image">
+                    <img src="/home/rajender/Downloads/image.jpeg" alt="Rajender Reddy Annam">
+                </div>
+                <div class="intro-text">
+                    <p>Passionate software engineer with a focus on information security, Currently pursuing M.Tech at IIIT Hyderabad, expanding my knowledge in computer science and security. Experienced in software development, automation, and security practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title"><i class="icon fas fa-briefcase"></i>Work Experience</h2>
+            <div class="experience-header">
+                <h3>Software Engineer</h3>
+                <h4>TIBCO Software (Cloud Software Group)</h4>
+                <p><i class="icon far fa-calendar-alt"></i>July 2021 - June 2024</p>
+            </div>
+            
+            <div class="project">
+                <h4><i class="icon fas fa-project-diagram"></i>Project 1: Platform Development "MOLEE"</h4>
+                <ul>
+                    <li>Worked on Spring framework based Localization Platform called "MOLEE", capable of automatically handling translation requests from various product stakeholders.</li>
+                    <li>Developed internal tools which automated the pre-processing work reducing 80% of the manual effort.</li>
+                    <li>Improved the JUnit Coverage and developed integration testsuite using Java, TestNG.</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <h4><i class="icon fas fa-project-diagram"></i>Project 2: Release Notes Automation Tool</h4>
+                <ul>
+                    <li>Developed the Automated Tool which helped the technical writers in preparing the release-notes for the products.</li>
+                    <li>Integrated the application with Jira Core Cloud and fetched the documentation using Jira REST-API JQL calls.</li>
+                    <li>Mitigated the manual effort of technical writers by 90%, facilitated the developers to avoid clumsiness.</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <h4><i class="icon fas fa-project-diagram"></i>Project 3: Globalization and Localization Engineering</h4>
+                <ul>
+                    <li>Led communication between product teams and stakeholders for 4 key products, streamlining translation processes.</li>
+                    <li>Developed Automation framework using Java, Selenium and TestNG for the TIBCO EBX Product.</li>
+                    <li>Kick started the automation for EBX product from scratch and successfully automated 60% of the test-cases in all the supported languages of the product.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title"><i class="icon fas fa-graduation-cap"></i>Education</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>M.Tech in Computer Science and Information Security</h3>
+                    <h4>IIIT Hyderabad</h4>
+                    <p><i class="icon far fa-calendar-alt"></i>July 2024 - Present</p>
+                </div>
+                <div class="card">
+                    <h3>B.Tech in Information Technology</h3>
+                    <h4>Gokaraju Rangaraju Institute of Engineering & Technology</h4>
+                    <p><i class="icon fas fa-star"></i>CGPA: 9.47/10</p>
+                    <p><i class="icon far fa-calendar-alt"></i>Aug 2017 - June 2021</p>
+                </div>
+                <div class="card">
+                    <h3>Class XII - Telangana State Board</h3>
+                    <h4>Narayana Junior College</h4>
+                    <p><i class="icon fas fa-percent"></i>Percentage: 97.5%</p>
+                    <p><i class="icon far fa-calendar-alt"></i>June 2015 - May 2017</p>
+                </div>
+                <div class="card">
+                    <h3>Class X - Telangana State Board</h3>
+                    <h4>Sri Chaitanya School</h4>
+                    <p><i class="icon fas fa-star"></i>CGPA: 9.7/10</p>
+                    <p><i class="icon far fa-calendar-alt"></i>June 2014 - Apr 2015</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title"><i class="icon fas fa-cogs"></i>Skills</h2>
+            <ul class="skills">
+                <li><i class="fab fa-java"></i>Java</li>
+                <li><i class="fab fa-python"></i>Python</li>
+                <li><i class="fab fa-cuttlefish"></i>C++</li>
+                <li><i class="fas fa-database"></i>SQL</li>
+                <li><i class="fab fa-html5"></i>HTML</li>
+                <li><i class="fab fa-css3-alt"></i>CSS</li>
+                <li><i class="fas fa-leaf"></i>Spring Boot</li>
+                <li><i class="fas fa-project-diagram"></i>Apache Maven</li>
+                <li><i class="fas fa-bug"></i>Ant</li>
+                <li><i class="fas fa-database"></i>Hibernate</li>
+                <li><i class="fab fa-jenkins"></i>Jenkins</li>
+                <li><i class="fas fa-vial"></i>Selenium</li>
+                <li><i class="fas fa-check-double"></i>TestNG</li>
+                <li><i class="fas fa-vial"></i>JUnit</li>
+                <li><i class="fab fa-google"></i>GCP</li>
+                <li><i class="fas fa-robot"></i>Machine Learning</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title"><i class="icon fas fa-envelope"></i>Contact Me</h2>
+            <div class="contact-details">
+                <p><i class="icon fas fa-envelope"></i>Email: <a href="mailto:annamrajenderreddy@gmail.com">annamrajenderreddy@gmail.com</a></p>
+                <p><i class="icon fas fa-phone"></i>Phone: <a href="tel:+919182725236">(+91) 9182725236</a></p>
+                <p><i class="icon fas fa-map-marker-alt"></i>Hyderabad, India</p>
+                <p><i class="icon fab fa-linkedin"></i><a href="https://www.linkedin.com/in/RajenderAnnam" target="_blank">LinkedIn</a></p>
+                <p><i class="icon fab fa-github"></i><a href="https://github.com/yourprofile" target="_blank">GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Rajender Reddy Annam, Copyright © 2024</p>
+    </footer>
+</body>
+</html>
